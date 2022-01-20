@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to copy</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="coupon-card">
+            <img src="uber.png" class="logo">
+            <h3>Get 50% flat off in all rides of <br> uber using PNB and Axis Card</h3>
+            <div class="coupon-row">
+                <span id="cpnCode">DEBARPAN2022</span>
+                <span id="cpnBtn">Copy Code</span>
+            </div>
+
+            <p>Valid till 2nd May.</p>
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+
+
+    </div>
+</div>
+<script>
+        var cpnBtn = document.getElementById("cpnBtn");
+        var cpnBtn = document.getElementById("cpnBtn");
+        cpnBtn.onclick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+            cpnBtn.innerHTML = "Copied";
+            setTimeout(function(){
+            cpnBtn.innerHTML = "Copy Code";
+            },3000);
+        }
+</script>
+</body>
+</html>
